@@ -45,7 +45,7 @@ def get_inline_menu():
     return keyboard
 
 @dp.message_handler(text="Купить")
-async def get_buying_list(message: types.Message):
+async def get_buying_list(message):
     products = get_all_products()
 
     catalog_kb = InlineKeyboardMarkup()
